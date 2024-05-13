@@ -1,17 +1,14 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import './HomeBanner2.css'
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-
-// import required modules
 import { Pagination } from 'swiper/modules';
 
 
 const HomeBanner2 = () => {
   const [workouts, setWorkouts] = React.useState<any[] | null>(null)
+  const [data, setData] = React.useState<any[] | null>(null)
 
   const getworkouts = async () => {
     let data: any = [
@@ -68,6 +65,27 @@ const HomeBanner2 = () => {
   React.useEffect(() => {
     getworkouts()
   }, [])
+
+  const getData=async()=> {
+    fetch(process.env.NEXT_PUBLIC_BACKEND_API + '/workoutplans/workouts', {
+      method: 'GET',
+      credentials: 'include',
+    })
+    .then(res => res.json())
+    .then(data => {
+      console.log(data)
+      if(data.ok) {
+        setData(data.data)
+      }
+      else {
+        setData([])
+      }
+    })
+    .catch(err=>{
+      console.log(err)
+      setData([])
+    })
+  }
 
   return (
     <div>

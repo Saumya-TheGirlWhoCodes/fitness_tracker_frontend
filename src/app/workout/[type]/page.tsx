@@ -17,7 +17,7 @@ const page = () => {
                     sets: 3,
                     reps: 10,
                     rest: 60,
-                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
+                    description: 'The flat bench press is a classic compound exercise that primarily targets the chest muscles, while also engaging the shoulders and triceps. It develops the upper body strength and muscle mass.'
                 },
                 {
                     exercise: 'Incline Bench Press',
@@ -25,7 +25,7 @@ const page = () => {
                     sets: 3,
                     reps: 10,
                     rest: 60,
-                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
+                    description: 'The targets the upper portion of the chest more intensely. It is great for building strength and definition in the upper chest muscles, as well as engaging the shoulders and triceps.'
 
                 },
                 {
@@ -34,7 +34,7 @@ const page = () => {
                     sets: 3,
                     reps: 10,
                     rest: 60,
-                    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatum.'
+                    description: 'In this, you lie on a decline bench, which angles your body downward. This targets the lower portion of the chest more, providing a different stimulus compared to the flat or incline bench press. It also engages the shoulders and triceps to a lesser extent.'
 
                 }
             ]

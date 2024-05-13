@@ -23,7 +23,6 @@
 
 .authform .left{
     width: 50%;
-    /* height: 100%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,7 +36,6 @@
 }
 
 .authform .right{
-    /* background-color: var(--col1); */
     width: 50%;
     height: 100%;
     border-left: 1px solid var(--col1);
@@ -66,10 +64,6 @@
 .authform .form_input_leftright{
     display: flex;
     gap: 10px;
-}
-
-.authform .right form input{
-    /* background-color: aqua; */
 }
 
 .popup .close{
